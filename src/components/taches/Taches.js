@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import "./taches.css"
 
 const Taches = () => {
+    const [pAddTask , setPAddTask] = useState("");
+    let pTask = pAddTask;
     return (
         <div className="taches">
-            <h3>Tâche x</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, dolores iure eos distinctio id quis.</p>
+            <p>{pTask}</p>
             <div>
                 <button className="btnTaches">Valider</button>
                 <button className="btnTaches">Supprimer</button>

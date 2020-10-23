@@ -5,6 +5,8 @@ import Cactus from './components/Cactus/cactus'
 import Fanny from './components/Fanny/Fanny';
 import '../node_modules/bulma/css/bulma.css'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "./App.css"
+import PageCactus from './components/pageCactus/PageCactus';
 
 
 function App() {

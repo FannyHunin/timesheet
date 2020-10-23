@@ -10,12 +10,7 @@ const AjoutTaches = () => {
     const inpValue = useRef(null)
 
     const addTask = () => {
-        let toDosPanier = [...toDos];
-        pTask = inpValue.current.value 
-        inpValue.current.value = ""
-        toDosPanier.push(toDosMap);
-        setToDos(toDosPanier);
-        setPAddTask(pTask);
+    
     }
 
     const toDosMap = toDos.map ((e, i) => (

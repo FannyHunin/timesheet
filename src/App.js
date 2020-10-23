@@ -1,11 +1,9 @@
 import React from 'react';
 import './app.css'
 import Home from './components/Home/home'
-import Cactus from './components/Cactus/cactus'
 import Fanny from './components/Fanny/Fanny';
 import '../node_modules/bulma/css/bulma.css'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./App.css"
 import PageCactus from './components/pageCactus/PageCactus';
 
 
@@ -45,7 +43,7 @@ function App() {
 
         <Switch>
           <Route path="/cactus">
-            <Cactus/>
+            <PageCactus/>
           </Route>
           <Route path="/fanny">
             <Fanny/>

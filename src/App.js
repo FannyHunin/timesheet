@@ -12,11 +12,32 @@ function App() {
     <div>
       <Router>
         <div className="navi">
-          <nav className='is-size-3'>
-              <img id='logo' className='ml-4 mt-2' src="img/calendar.png" alt=""/>
-              <Link id='home' className="ml-4 has-text-black" to="/"><span>Home</span></Link>
-              <Link id='cactus' className="ml-4 has-text-black" to="cactus"><span>Cactus</span></Link>
-              <Link id='fanny' className="ml-4 has-text-black" to="fanny"><span>Fanny</span></Link>
+          <nav className='is-size-3 is-flex '>
+              <div>
+                <img id='logo' className='ml-4 mt-2' src="img/calendar.png" alt=""/>
+                <Link id='home' className="ml-4 has-text-black" to="/"><span>Home</span></Link>
+                <Link id='cactus' className="ml-4 has-text-black" to="cactus"><span>Cactus</span></Link>
+                <Link id='fanny' className="ml-4 has-text-black" to="fanny"><span>Fanny</span></Link>
+              </div>
+              <div>
+              <div class="dropdown is-hoverable posiDrop">
+                <div class="dropdown-trigger">
+                  <button class="button has-background-primary has-text-white is-size-3 is-shadowless" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>Theme</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <div>
+                      hello
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
           </nav>
         </div>
 

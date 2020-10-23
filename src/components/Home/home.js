@@ -8,9 +8,9 @@ export default function Home() {
     let laDateuh = date;
     let leMois = date.getMonth() + 1;
 
-    useEffect(() => {
-        setlaDate(new Date())
-    })
+    // useEffect(() => {
+    //     setlaDate(new Date())
+    // })
 
     return (
         <Fragment>

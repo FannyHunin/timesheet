@@ -15,7 +15,8 @@ const Formulaire = () => {
         const divNom = document.getElementById("affichage")
         const data = localStorage.getItem("userName");
         console.log(data);
-        divNom.innerText = data;
+        divNom.innerText = "Bonjour, " +  data;
+        localStorage.clear()
     }
     return (
         <div>

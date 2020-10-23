@@ -1,0 +1,28 @@
+.taches{
+    background-color: rgb(255, 217, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.btnTaches:first-child{
+    border: none;
+    background-color: white;
+    padding : 5px;
+    transition: .4s;
+}
+.btnTaches:first-child:hover{
+    background-color: rgb(197, 197, 197);
+}
+.btnTaches:last-child{
+    margin-left: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    padding : 5px;
+    transition: .4s;
+}
+.btnTaches:last-child:hover{
+    background-color: rgb(90, 90, 90);
+}

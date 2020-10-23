@@ -1,20 +1,35 @@
 import React, { useRef, useState } from 'react';
 import Taches from '../taches/Taches';
 import "./ajoutTaches.css"
-import pTask from "../taches/Taches";
 
 
 const AjoutTaches = () => {
     const[toDos, setToDos] = useState([
     ])
-    const inpValue = useRef(null)
+    const inpValue = useRef(null);
+    const inpDate = useRef(null);
+    const [pText, setPText] = useState('');
+    const [valDate, setValDate] = useState(0);
 
     const addTask = () => {
-    
+        let valeurP = inpValue.current.value
+        let valeurD = inpDate.current.value
+        let leP = pText
+        let laD = valDate
+        let TabToDos = toDos
+
+        leP = valeurP
+        laD = valeurD
+        inpValue.current.value = ''
+        TabToDos.push(leP)
+
+        setValDate(laD)
+        setPText(leP)
+        setToDos(TabToDos)
     }
 
     const toDosMap = toDos.map ((e, i) => (
-        <Taches inpValue={inpValue} key={i} toDos={e}/>
+        <Taches inpValue={inpValue} key={i} toDos={e} pText={toDos[i]} pDate={valDate}/>
     ))
     
     
@@ -30,7 +45,7 @@ const AjoutTaches = () => {
                         </label>
                         <label htmlFor="">
                             Entrez une date de début
-                            <input type="date" name="" id=""/>
+                            <input ref={inpDate} type="date" name="" id=""/>
                         </label>
                     </div>
                     <div className = "forms2">

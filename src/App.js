@@ -20,17 +20,17 @@ function App() {
                 <Link id='fanny' className="ml-4 has-text-black" to="fanny"><span>Fanny</span></Link>
               </div>
               <div>
-              <div class="dropdown is-hoverable posiDrop">
-                <div class="dropdown-trigger">
-                  <button class="button has-background-primary has-text-white is-size-3 is-shadowless" aria-haspopup="true" aria-controls="dropdown-menu">
+              <div className="dropdown is-hoverable posiDrop">
+                <div className="dropdown-trigger">
+                  <button className="button has-background-primary has-text-white is-size-3 is-shadowless" aria-haspopup="true" aria-controls="dropdown-menu">
                     <span>Theme</span>
-                    <span class="icon is-small">
-                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    <span className="icon is-small">
+                      <i className="fas fa-angle-down" aria-hidden="true"></i>
                     </span>
                   </button>
                 </div>
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                  <div class="dropdown-content">
+                <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div className="dropdown-content">
                     <div>
                       hello
                     </div>

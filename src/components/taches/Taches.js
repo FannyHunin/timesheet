@@ -1,12 +1,13 @@
-import React, {useRef, useState} from 'react';
+import userEvent from '@testing-library/user-event';
+import React, {useRef} from 'react';
 import "./taches.css"
 
-const Taches = () => {
-    const [pAddTask , setPAddTask] = useState("");
-    let pTask = pAddTask;
+const Taches = ({pText, pDate}) => {
+    
     return (
         <div className="taches">
-            <p>{pTask}</p>
+            <p> {pText} </p>
+            <p> {pDate}</p>
             <div>
                 <button className="btnTaches">Valider</button>
                 <button className="btnTaches">Supprimer</button>

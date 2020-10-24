@@ -5,7 +5,6 @@ import "./ajoutTaches.css"
 
 const AjoutTaches = () => {
     const[toDos, setToDos] = useState([[],[],[],[]])
-
     console.log(toDos[1]);
     const inpValue = useRef(null);
     const inpDate = useRef(null);
@@ -26,7 +25,6 @@ const AjoutTaches = () => {
         let laS = valStart
         let laE = valEnd
         let TabToDos = toDos
-
         leP = valeurP
         laD = valeurD
         laS = valeurS
@@ -36,7 +34,6 @@ const AjoutTaches = () => {
         TabToDos[1].push(laD)
         TabToDos[2].push(laS)
         TabToDos[3].push(laE)
-
         setValDate(laD)
         setPText(leP)
         setToDos(TabToDos)

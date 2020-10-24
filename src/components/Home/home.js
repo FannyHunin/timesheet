@@ -78,19 +78,14 @@ export default function Home() {
                 </div>
             </div>
             <div className="is-flex is-justify-content-center ">
-                <div className='columns mt-6 test'>
-                    <div className="column is-size-1 mr-6 testII">
-                        <h1>Cactus</h1>
-                        <div>
-
-                        </div>
+                <div className='mt-6'>
+                    <div className='divProverbe has-background-primary'>
+                        <h1 className='titreProverbe is-size-1'>Proverbe du jour</h1>
                     </div>
-                    <div className="column is-size-1 testII">
-                        <h1>Fanny</h1>
-                        <div>
-
-                        </div>
+                    <div className='divUnderProverbe'>
+                        <i><p className='is-size-1 proverbe'>"Au mois d'octobre, fumez bien et vous récolterez"</p></i>
                     </div>
+                    
                 </div>
             </div>
         </Fragment>

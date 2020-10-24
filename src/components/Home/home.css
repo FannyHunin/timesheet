@@ -58,3 +58,26 @@
     font-weight: bold !important;
     width: 805px;
 }
+
+.divProverbe{
+    width: 1660px;
+    height: 70px;
+}
+
+.titreProverbe{
+    color: white;
+    text-align: center;
+}
+
+.divUnderProverbe{
+    width: 1660px;
+    height: 250px;
+    background-color:  #EBFFFC;
+    text-align: center;
+    color: #00D1B2;
+    font-weight: bold;
+}
+
+.proverbe{
+    padding-top: 70px;
+}

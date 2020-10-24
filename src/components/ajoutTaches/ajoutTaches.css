@@ -36,12 +36,9 @@ label{
     height: 50px;
     border: none;
     font-family: 'Roboto', sans-serif;
-    background-color:rgb(255, 217, 0);
-    border: solid rgba(0, 0, 0, 0.479) 1px;
+    background-color:  #00D1B2;
     font-weight: bold;
     margin-bottom: 20px;
     transition: .4s;
-}
-.btnAjouter:hover{
-    background-color : rgb(192, 166, 20);
+    color: white;
 }

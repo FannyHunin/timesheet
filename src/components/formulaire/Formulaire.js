@@ -5,6 +5,7 @@ const Formulaire = () => {
         name : ""
     })
     const setData = (e) => {
+        e.preventDefault();
         const input = document.getElementsByTagName("input")[0];
         const userName = {...user}
         setUser(input.value)

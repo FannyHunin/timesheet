@@ -30,3 +30,33 @@
 .posiDrop{
     margin-left: 1220px;
 }
+
+.testsadada{
+    width: 100%;
+}
+
+.tailleSaMere{
+    height: 30px;
+}
+
+.btnsamaman{
+    background-color: #00D1B2;
+    color: #EBFFFC !important;
+    border: solid white 1px;
+    font-weight: bold;
+}
+
+.pDePapa{
+    color: white;
+    margin-right: 10px;
+}
+
+.bDeBouton{
+    background-color: #00D1B2;
+    color: #EBFFFC !important;
+    border: solid white 1px;
+    font-weight: bold;
+    height: 35px;
+    margin-top: 11px;
+    margin-right: 10px;
+}

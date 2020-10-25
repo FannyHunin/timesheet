@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import "./taches.css"
 
-const Taches = ({pText, pDate, pStart, pEnd}) => {
-    
+const Taches = ({ pText, pDate, pStart, pEnd, pName }) => {
+
     const divTache = useRef(null)
     const valider = () => {
         let laDivTache = divTache.current
@@ -15,18 +15,20 @@ const Taches = ({pText, pDate, pStart, pEnd}) => {
         laDivTache.remove()
     }
 
+    // 
+
     return (
-        <div ref = {divTache} className="taches has-text-center">
-            <div className='tachesTitle is-size-2'>{pText}</div>
-            <div className='tachesReste'>
-                <p>Date de début: {pDate}</p>
-                <p>Début: {pStart} Fin: {pEnd}</p>
-                <div>
-                    <button onClick={valider} className="btnTaches">Valider</button>
-                    <button onClick={supprimer} className="btnTaches">Supprimer</button>
-                </div>
-            </div>
-            
+        <div ref={divTache} className="taches has-text-center">
+            <ol>
+                <li className='columns'>
+                    <p className='column'><b>Nom: </b> {pName} </p>
+                    <p className='column'><b> Tache: </b> {pText} </p>
+                    <p className='column'><b> Date: </b> {pDate} </p>
+                    <p className='column'><b> Début: </b> {pStart} </p>
+                    <p className='column'><b> Fin: </b> {pEnd} </p>
+                </li>
+            </ol>
+
         </div>
     );
 }

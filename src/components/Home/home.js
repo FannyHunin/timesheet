@@ -7,7 +7,7 @@ export default function Home() {
     const [date, setlaDate] = useState(new Date())
     let laDateuh = date;
     let leMois = date.getMonth() + 1;
-
+    
     useEffect(() => {
         setlaDate(new Date())
     })
@@ -70,10 +70,10 @@ export default function Home() {
                 </div>
                 <div className='ml-6 mr-6 mt-6 weekCalendar'>
                     <div className='is-size-1 weekCalendarTitle'>
-                        Tache du jour
+                        Photo du Jour
                     </div>
-                    <div className='columns divUnderCalenTitle'>
-                        
+                    <div className='columns is-flex is-justify-content-center divUnderCalenTitle'>
+                        <img style={{width: '50%'}} src="img/hey.jpg" alt=""/>
                     </div>
                 </div>
             </div>
